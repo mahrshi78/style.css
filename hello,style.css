@@ -1,0 +1,57 @@
+<div class="card-container">
+  <div class="card">
+    <h2 class="card-title">Card 1</h2>
+    <img src="image1.jpg" alt="Card 1 Image" class="card-image">
+    <p class="card-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+
+  <div class="card">
+    <h2 class="card-title">Card 2</h2>
+    <img src="image2.jpg" alt="Card 2 Image" class="card-image">
+    <p class="card-content">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+
+  <div class="card">
+    <h2 class="card-title">Card 3</h2>
+    <img src="image3.jpg" alt="Card 3 Image" class="card-image">
+    <p class="card-content">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+  </div>
+</div>
+CSS:
+
+css
+Copy code
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.card-content {
+  font-size: 16px;
+  line-height: 1.5;
+}
